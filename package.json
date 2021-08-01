@@ -1,0 +1,31 @@
+{
+  "name": "vento-do-rabo",
+  "version": "1.0.0",
+  "description": "Uso do Tailwind em um projeto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samu101108/vento-do-rabo.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css"
+  ],
+  "author": "Samuel Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samu101108/vento-do-rabo/issues"
+  },
+  "homepage": "https://github.com/samu101108/vento-do-rabo#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "cssnano": "^5.0.7",
+    "postcss": "^8.3.6"
+  }
+}

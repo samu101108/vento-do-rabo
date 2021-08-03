@@ -1,31 +1,33 @@
 {
   "name": "vento-do-rabo",
   "version": "1.0.0",
-  "description": "Uso do Tailwind em um projeto",
-  "main": "index.html",
+  "description": "Uma página qualquer estilizada com CSS do Tailwind",
+  "main": "index.js",
   "scripts": {
-    "test": "ventodorabo echo"
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "tw:prod": "NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "tw:watch": "onchange 'tailwind.config.js' 'src/**/*.css' -- npm run tw:build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samu101108/vento-do-rabo.git"
   },
-  "keywords": [
-    "tailwind",
-    "css"
-  ],
-  "author": "Samuel Barbosa",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/samu101108/vento-do-rabo/issues"
   },
   "homepage": "https://github.com/samu101108/vento-do-rabo#readme",
   "dependencies": {
-    "tailwindcss": "^2.2.7"
+    "cssnano": "^5.0.7",
+    "node": "^16.6.0",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "cssnano": "^5.0.7",
-    "postcss": "^8.3.6"
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }
